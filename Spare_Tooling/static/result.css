@@ -1,0 +1,34 @@
+.btn-group {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 20px;
+  background-color: #5c6bc0;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #3f4a96;
+}
+
+.book-btn {
+  background-color: #28a745;
+}
+
+.book-btn:hover {
+  background-color: #1e7e34;
+}
+
+.prediction {
+  font-size: 20px;
+  color: #ffcc00;
+  margin: 10px 0 20px;
+}

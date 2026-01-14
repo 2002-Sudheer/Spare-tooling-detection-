@@ -1,0 +1,5 @@
+body { font-family: Verdana; background: #fefefe; padding: 20px; }
+header { background: #03045e; color: white; padding: 15px; }
+a { color: yellow; text-decoration: none; }
+a:hover { text-decoration: underline; }
+main { margin-top: 20px; font-size: 18px; }

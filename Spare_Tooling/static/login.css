@@ -1,0 +1,6 @@
+body { font-family: Arial; background: #caf0f8; display: flex; justify-content: center; align-items: center; height: 100vh; }
+.login-container { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.2); text-align: center; }
+input { margin: 10px; padding: 10px; width: 200px; }
+button { padding: 10px 20px; background: #0077b6; color: white; border: none; border-radius: 5px; }
+button:hover { background: #023e8a; }
+a { color: #0077b6; text-decoration: none; }

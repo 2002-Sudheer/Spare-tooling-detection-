@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result - Spare Tooling</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+</head>
+<body>
+    <div class="result-container">
+        <h2>🔧 Prediction Result</h2>
+        <p>Required Tool / Service:</p>
+        <p class="prediction"><b>{{ prediction }}</b></p>
+
+        <!-- Buttons -->
+        <div class="btn-group">
+            <a href="{{ url_for('input_page') }}" class="btn">🔄 Predict Again</a>
+            <a href="{{ url_for('booking_page') }}" class="btn book-btn">📅 Book a Slot</a>
+        </div>
+    </div>
+</body>
+</html>

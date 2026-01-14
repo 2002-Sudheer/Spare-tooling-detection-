@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About - Spare Tooling</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
+</head>
+<body>
+    <header>
+        <h1>About Spare Tooling Prediction</h1>
+        <a href="{{ url_for('home') }}">⬅ Back Home</a>
+    </header>
+
+    <main>
+        <p>This project predicts the required automobile tools and services based on past service history, common problems, and vehicle company.</p>
+        <p>It uses a trained <b>Random Forest Classifier</b> model for predictions.</p>
+    </main>
+</body>
+</html>

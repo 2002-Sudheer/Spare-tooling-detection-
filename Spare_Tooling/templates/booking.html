@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repair Booking Form</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='booking.css') }}">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Repair Booking Form</h2>
+
+    <!-- Booking Form -->
+    <form action="/book_slot" method="POST">
+
+      <!-- Name Section -->
+      <div class="input-group">
+        <input type="text" name="first_name" placeholder="First Name" required>
+        <input type="text" name="last_name" placeholder="Last Name" required>
+      </div>
+
+      <!-- Appointment Date -->
+      <label>Select an Appointment Date</label>
+      <div class="appointment-section">
+        <input type="date" name="appointment_date" required>
+      </div>
+
+      <!-- Time Slots -->
+      <label>Select a Time Slot</label>
+      <div class="time-slots">
+        <label><input type="radio" name="time_slot" value="9:00 AM" required> 9:00 AM</label>
+        <label><input type="radio" name="time_slot" value="10:00 AM"> 10:00 AM</label>
+        <label><input type="radio" name="time_slot" value="11:00 AM"> 11:00 AM</label>
+        <label><input type="radio" name="time_slot" value="2:00 PM"> 2:00 PM</label>
+        <label><input type="radio" name="time_slot" value="3:00 PM"> 3:00 PM</label>
+        <label><input type="radio" name="time_slot" value="4:00 PM"> 4:00 PM</label>
+      </div>
+
+      <!-- Vehicle Type -->
+      <label>Additional Requirement Vehicle Type</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="vehicle_type" value="Sedan"> Sedan</label>
+        <label><input type="checkbox" name="vehicle_type" value="Sports Car"> Sports Car</label>
+        <label><input type="checkbox" name="vehicle_type" value="Hatchback"> Hatchback</label>
+        <label><input type="checkbox" name="vehicle_type" value="SUV"> SUV</label>
+        <label><input type="checkbox" name="vehicle_type" value="Pickup Truck"> Pickup Truck</label>
+        <label><input type="checkbox" name="vehicle_type" value="Other"> Other</label>
+        <label><input type="checkbox" name="vehicle_type" value="Coupe"> Coupe</label>
+        <label><input type="checkbox" name="vehicle_type" value="Wagon"> Wagon</label>
+        <label><input type="checkbox" name="vehicle_type" value="Convertible"> Convertible</label>
+        <label><input type="checkbox" name="vehicle_type" value="Minivan"> Minivan</label>
+        <label><input type="checkbox" name="vehicle_type" value="Truck"> Truck</label>
+      </div>
+
+      <!-- Special Instructions -->
+      <label>Any Special Instructions</label>
+      <textarea name="instructions" placeholder="Write here..."></textarea>
+
+      <!-- Submit Button -->
+      <button class="submit-btn" type="submit">Book Now</button>
+    </form>
+  </div>
+</body>
+</html>

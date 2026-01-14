@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - Spare Tooling</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+</head>
+<body>
+    <header>
+        <h1>🚗 Spare Tooling Prediction</h1>
+        <nav>
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('login') }}">Login</a>
+            <a href="{{ url_for('signup') }}">Signup</a>
+            <a href="{{ url_for('tool_description') }}">Tool Description</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Welcome to Spare Tooling Prediction System</h2>
+        <p>Enter details about service history, problems, and company to predict tools required.</p>
+        <a href="{{ url_for('login') }}" class="btn">Start Prediction</a>
+    </main>
+</body>
+</html>
